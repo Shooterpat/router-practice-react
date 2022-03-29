@@ -1,9 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from "./pages/Home"
+import Classes from "./pages/Classes"
+import About from "./pages/About"
+import Error from "./pages/Error"
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom' //importing the browser router and routes from react router dom. Routes is replacing switch from old Routes
+
 
 function App() {
   return (
-    <div></div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Classes" element={<Classes />} />
+        <Route path="/About" element={<About />} />
+        <Route path='*' element={<Error />} />
+      </Routes>
+    </Router>
   );
 }
 
