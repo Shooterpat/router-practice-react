@@ -1,0 +1,14 @@
+{
+    "classes":[
+        {
+            "classname": "Fighter",
+            "power": "Fighters fight things",
+            "specialAbilities": "Combat Maneuvers"
+        },
+        {
+            "classname": "Wizard",
+            "power": "Wizards cast spells",
+            "specialAbilities": "Magic"
+        }
+    ]
+}
