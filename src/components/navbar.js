@@ -21,6 +21,9 @@ function Navbar() {
                 <li><button onClick={() => {
                     navigate("/About")
                 }} className='navButton'>About</button></li>
+                <li><button onClick={() => {
+                    navigate("/Protected")
+                }} className='navButton'>Protected Tab</button></li>
             </ul>
         </nav>
         </div>
