@@ -1,15 +1,20 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Classes() {
 
-    let { classname } = useParams();
+    const navigate = useNavigate()
 
     return (
         <div>
             <Navbar />
-            This is the {classname} class!
+            <button onClick={() => {
+                    navigate("/Classes/fighter")
+                }} className='classSelectButton'>Fighter</button>
+            <button onClick={() => {
+                    navigate("/Classes/wizard")
+                }} className='classSelectButton'>Wizard</button>
         </div>
     );
 }

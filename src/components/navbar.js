@@ -16,7 +16,7 @@ function Navbar() {
             <ul>
                 <li><Link to="/Home"><button className='navButton'>Home</button></Link></li>
                 <li><button onClick={() => {
-                    navigate("/Classes/:classname")
+                    navigate("/Classes")
                 }} className='navButton'>Class Compendium</button></li>
                 <li><button onClick={() => {
                     navigate("/About")
