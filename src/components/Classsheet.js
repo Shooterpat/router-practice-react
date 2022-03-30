@@ -11,10 +11,8 @@ function Classsheet() {
 
     console.log(classes[classname].power)
     
-
     return (
         <div className='classContainer'>
-            <Navbar />
             <div className='cardContainer'>
             <h1>This is the {classname} class!</h1>
                 <div className='cardTitle'></div>

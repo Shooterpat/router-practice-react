@@ -6,6 +6,9 @@ import Error from "./pages/Error"
 import Classsheet from './components/Classsheet';
 import Protected from './components/Protected';
 import Navbar from './components/Navbar';
+import NestedRouteTwo from './components/NestedRouteTwo';
+import NestedRouteOne from './components/NestedRouteOne';
+import ProtectedRoutes from './ProtectedRoutes';
 import { useState } from 'react';
 import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom' //importing the browser router and routes from react router dom. Routes is replacing switch from old Routes
 
@@ -34,11 +37,6 @@ function App() {
     
     <Router>
       <Navbar />
-      {/* {user ? (
-        <button onClick={handleSituation}>Sign Out</button>
-      ) :(
-        <button onClick={handleSituation}>Sign In</button>
-      )} */}
       <button onClick={handleSituation}>{buttonTxt}</button>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -46,7 +44,11 @@ function App() {
         <Route path="/Classes" element={<Classes />} />
         <Route path="/Classes/:classname" element={<Classsheet />} />
         <Route path="/About" element={<About />} />
-        <Route path = "/Protected" element = {admin ? <Protected/> : <Navigate replace to="/Home" />} />
+        <Route path = "/conditionallyProtected" element = {admin ? <Protected/> : <Navigate replace to="/Home" />} />
+        <Route element={<ProtectedRoutes user={user}/>}>
+          <Route path='/Protected1' element={<NestedRouteOne />}/>
+          <Route path='/Protected2' element={<NestedRouteTwo />}/>
+        </Route>
         <Route path='*' element={<Error />} />
       </Routes>
     </Router>

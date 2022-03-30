@@ -22,8 +22,14 @@ function Navbar() {
                     navigate("/About")
                 }} className='navButton'>About</button></li>
                 <li><button onClick={() => {
-                    navigate("/Protected")
+                    navigate("/conditionallyProtected")
                 }} className='navButton'>Protected Tab</button></li>
+                <li><button onClick={() => {
+                    navigate("/Protected1")
+                }} className='navButton'>NestedRouteOne</button></li>
+                <li><button onClick={() => {
+                    navigate("/Protected2")
+                }} className='navButton'>NestedRouteTwo</button></li>
             </ul>
         </nav>
         </div>

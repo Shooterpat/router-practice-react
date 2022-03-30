@@ -1,10 +1,6 @@
 import React from 'react';
-import { Navigate} from 'react-router-dom'
 
-function Protected(props) {
-
-
-
+function Protected() {
     return (
         <div>
             <h3>If you can see this you are authorized</h3>
