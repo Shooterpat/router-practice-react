@@ -7,13 +7,13 @@ function Classes() {
     const navigate = useNavigate()
 
     return (
-        <div>
+        <div className='classContainer'>
             <Navbar />
             <button onClick={() => {
-                    navigate("/Classes/fighter")
+                    navigate("/Classes/Fighter")
                 }} className='classSelectButton'>Fighter</button>
             <button onClick={() => {
-                    navigate("/Classes/wizard")
+                    navigate("/Classes/Wizard")
                 }} className='classSelectButton'>Wizard</button>
         </div>
     );
