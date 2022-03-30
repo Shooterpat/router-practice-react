@@ -1,0 +1,12 @@
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: blanchedalmond;
+    color: black;
+    width: 35vw;
+    height: 50vh;
+    margin-top: 25px;
+}
+

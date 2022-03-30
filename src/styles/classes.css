@@ -1,0 +1,38 @@
+.classContainer{
+    height: 90vh;
+    width: 99vw;
+    background-color: #593724;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FEF0BB;
+}
+
+.classInfoNavigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 25px;
+    width: 35vw;
+    height: 35vh;
+    border-radius: 6px 6px 6px 6px;
+    background-color: antiquewhite;
+}
+
+.classInfoNavigation h1{
+    background-color: #3E2519;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    border-radius: 5px 5px 0 0;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
